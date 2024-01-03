@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.gloom.defalt.Gloom"
+			"com.defalt.gloom.Gloom"
 		],
 		"client": [
-			"com.gloom.defalt.GloomClient"
+			"com.defalt.gloom.GloomClient"
 		],
 		"fabric-datagen": [
-			"com.gloom.defalt.GloomDataGenerator"
+			"com.defalt.gloom.GloomDataGenerator"
 		]
 	},
 	"mixins": [

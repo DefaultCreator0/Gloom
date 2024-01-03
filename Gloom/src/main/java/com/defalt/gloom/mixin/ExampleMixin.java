@@ -1,4 +1,4 @@
-package com.gloom.defalt.mixin;
+package com.defalt.gloom.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

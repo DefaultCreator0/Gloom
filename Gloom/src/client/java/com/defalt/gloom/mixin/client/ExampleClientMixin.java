@@ -1,4 +1,4 @@
-package com.gloom.defalt.mixin.client;
+package com.defalt.gloom.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;
