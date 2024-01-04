@@ -1,6 +1,7 @@
 package com.defalt.gloom.block;
 
 import com.defalt.gloom.Gloom;
+import com.defalt.gloom.block.custom.GloomBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block Gloom_Block = registerBlock("gloom_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.SCULK)));
+            new GloomBlock(FabricBlockSettings.copyOf(Blocks.SCULK)));
 
     private static Block registerBlock(String name,Block block){
         registerBlockItem(name,block);

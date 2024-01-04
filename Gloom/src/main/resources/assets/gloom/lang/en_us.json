@@ -1,5 +1,6 @@
 {
   "item.gloom.gloom_whisp": "Gloom Whisp",
   "itemgroup.gloom":"Gloom Items",
-  "block.gloom.gloom_block": "Gloom Block"
+  "block.gloom.gloom_block": "Gloom Block",
+  "effect.gloom.gloom": "Gloom"
 }

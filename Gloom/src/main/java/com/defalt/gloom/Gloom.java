@@ -1,6 +1,7 @@
 package com.defalt.gloom;
 
 import com.defalt.gloom.block.ModBlocks;
+import com.defalt.gloom.effect.ModEffects;
 import com.defalt.gloom.item.ModItemGroups;
 import com.defalt.gloom.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -23,5 +24,6 @@ public class Gloom implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+		ModEffects.registerEffect();
 	}
 }
