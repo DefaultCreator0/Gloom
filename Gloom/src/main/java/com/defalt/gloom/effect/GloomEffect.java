@@ -9,6 +9,8 @@ import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.Map;
 
+import static com.defalt.gloom.effect.ModEffects.gloom;
+
 public class GloomEffect extends StatusEffect {
 
 
@@ -27,11 +29,15 @@ public class GloomEffect extends StatusEffect {
 
             float CurrentHealth = entity.getHealth();
             float MaxHealth = 20;
-            if(entity.isPlayer()){
+            if(entity.isPlayer() && !entity.getWorld().isSkyVisible(entity.getBlockPos())){
                 PlayerEntity p = (PlayerEntity)entity;
                 p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
                         .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
             }
+            if(entity.isPlayer() && !entity.getWorld().isSkyVisible(entity.getBlockPos())){
+
+            }
+
     }
 
 

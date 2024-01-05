@@ -14,12 +14,15 @@ public class ModEffects extends StatusEffects {
 
     public static StatusEffect gloom;
     public static StatusEffect refresh;
+    public static StatusEffect malice;
 
     public static void registerEffect(){
         gloom = Registry.register(Registries.STATUS_EFFECT, new Identifier(Gloom.ModID,"gloom"),
                 new GloomEffect(StatusEffectCategory.HARMFUL,3124687));
         refresh = Registry.register(Registries.STATUS_EFFECT, new Identifier(Gloom.ModID,"refresh"),
                 new RefreshEffect(StatusEffectCategory.BENEFICIAL,3124687));
+        malice = Registry.register(Registries.STATUS_EFFECT, new Identifier(Gloom.ModID,"malice"),
+                new MaliceEffect(StatusEffectCategory.HARMFUL,3124687));
     }
 
 }

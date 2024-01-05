@@ -6,6 +6,7 @@ import com.defalt.gloom.item.ModItemGroups;
 import com.defalt.gloom.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +26,8 @@ public class Gloom implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModEffects.registerEffect();
+
+		//ServerTickEvents.START_SERVER_TICK.register((ServerTickEvents.StartTick) new StepInSunlight());
+
 	}
 }

@@ -7,8 +7,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
 
-import static com.defalt.gloom.effect.ModEffects.gloom;
-import static com.defalt.gloom.effect.ModEffects.refresh;
+import static com.defalt.gloom.effect.ModEffects.*;
 
 public class RefreshEffect extends StatusEffect {
 
@@ -25,17 +24,17 @@ public class RefreshEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         float CurrentHealth = entity.getHealth();
         float MaxHealth = 20;
-        if (entity.isPlayer()) {
+        if (entity.isPlayer() && entity.getWorld().isSkyVisible(entity.getBlockPos())) {
+            entity.removeStatusEffect(gloom);
+            entity.removeStatusEffect(malice);
             PlayerEntity p = (PlayerEntity) entity;
-            if(p.getMaxHealth() < 19){
+            if(p.getMaxHealth() <= 19){
                 p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
-                        .addPersistentModifier(new EntityAttributeModifier("Gloom", 0.05f, EntityAttributeModifier.Operation.ADDITION));
+                        .addPersistentModifier(new EntityAttributeModifier("Refresh", 0.05f, EntityAttributeModifier.Operation.ADDITION));
             }
             else{
                 entity.removeStatusEffect(refresh);
             }
-
         }
-        entity.removeStatusEffect(gloom);
     }
 }
