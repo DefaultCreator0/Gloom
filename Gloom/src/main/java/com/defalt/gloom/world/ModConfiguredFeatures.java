@@ -22,8 +22,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOOM_KEY = registerKey("gloom");
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest sculkPlacement = new TagMatchRuleTest(BlockTags.OVERWORLD_CARVER_REPLACEABLES);
+        RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.SCULK_REPLACEABLE);
+        RuleTest sculkPlacement = new TagMatchRuleTest(BlockTags.PICKAXE_MINEABLE);
 
         List<OreFeatureConfig.Target> gloomSpawn =
                 List.of(OreFeatureConfig.createTarget(sculkPlacement, ModBlocks.Gloom_Block.getDefaultState()),
@@ -31,8 +31,8 @@ public class ModConfiguredFeatures {
                 );
 
 
-        register(context, GLOOM_KEY, Feature.ORE,new OreFeatureConfig(gloomSpawn,15) );
-        //register(context, GLOOM_KEY, SCULK_PATCH,new SculkPatchFeatureConfig());
+        register(context, GLOOM_KEY, Feature.ORE,new OreFeatureConfig(gloomSpawn,60) );
+        //register(context, GLOOM_KEY, Feature.BASALT_PILLAR,new BasaltColumnsFeatureConfig());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

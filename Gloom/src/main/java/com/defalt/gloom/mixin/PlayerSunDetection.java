@@ -33,10 +33,13 @@ public abstract class PlayerSunDetection extends LivingEntity {
     )
     public void onTick(CallbackInfo ci) {
         LivingEntity player = this;
-        if (player.getWorld().isSkyVisible(player.getBlockPos()) && player.hasStatusEffect(gloom)) {
-            player.addStatusEffect(new StatusEffectInstance(refresh,-1));
-            Gloom.LOGGER.info("a");
+        if(player.getY() > 40){
+            if (player.getWorld().isSkyVisible(player.getBlockPos()) && player.hasStatusEffect(gloom)) {
+                player.addStatusEffect(new StatusEffectInstance(refresh,20));
+                Gloom.LOGGER.info("a");
+            }
         }
+
 
     }
 }

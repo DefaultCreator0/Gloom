@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
 
         register(context, GLOOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GLOOM_KEY),
                 ModOrePlacement.modifiersWithCount(25,//Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(10))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-120), YOffset.fixed(10))));
 
 
     }
