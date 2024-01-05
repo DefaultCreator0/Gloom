@@ -4,6 +4,7 @@ import com.defalt.gloom.block.ModBlocks;
 import com.defalt.gloom.effect.ModEffects;
 import com.defalt.gloom.item.ModItemGroups;
 import com.defalt.gloom.item.ModItems;
+import com.defalt.gloom.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
@@ -26,6 +27,7 @@ public class Gloom implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModEffects.registerEffect();
+		ModWorldGeneration.generateModWorldGen();
 
 		//ServerTickEvents.START_SERVER_TICK.register((ServerTickEvents.StartTick) new StepInSunlight());
 

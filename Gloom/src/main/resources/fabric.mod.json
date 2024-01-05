@@ -22,7 +22,7 @@
 			"com.defalt.gloom.GloomClient"
 		],
 		"fabric-datagen": [
-			"com.defalt.gloom.GloomDataGenerator"
+			"com.defalt.gloom.world.GloomDataGenerator"
 		]
 	},
 	"mixins": [
