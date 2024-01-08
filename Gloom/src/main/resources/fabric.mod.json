@@ -19,7 +19,7 @@
 			"com.defalt.gloom.Gloom"
 		],
 		"client": [
-			"com.defalt.gloom.GloomClient"
+          "com.defalt.gloom.GloomClientC"
 		],
 		"fabric-datagen": [
 			"com.defalt.gloom.world.GloomDataGenerator"

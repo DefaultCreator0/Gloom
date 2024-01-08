@@ -5,12 +5,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.*;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 
 import java.util.Map;
 
-import static com.defalt.gloom.effect.ModEffects.gloom;
-import static com.defalt.gloom.effect.ModEffects.malice;
+import static com.defalt.gloom.effect.ModEffects.*;
 
 public class GloomEffect extends StatusEffect {
 
@@ -37,9 +37,14 @@ public class GloomEffect extends StatusEffect {
             }
             else{
                 if(entity.isPlayer() && !entity.getWorld().isSkyVisible(entity.getBlockPos())){
-                 //   p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
-                 //           .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
+                    if(p.hasStatusEffect(malice) && p.getHealth() < p.getMaxHealth()){
+                        p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
+                                .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
+                    }
                 }
+            }
+            if(entity.getY() > 20 && entity.getWorld().isSkyVisible(entity.getBlockPos())){
+                p.addStatusEffect(new StatusEffectInstance(refresh,-1) );
             }
 
     }

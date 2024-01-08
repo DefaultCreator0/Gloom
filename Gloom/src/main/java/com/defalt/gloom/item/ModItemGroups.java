@@ -15,7 +15,7 @@ public class ModItemGroups {
     public static final ItemGroup Gloom_Group = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Gloom.ModID, "gloom"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.gloom"))
-                    .icon(()-> new ItemStack(ModItems.Gloom_Whisp)).entries((displayContext, entries) ->
+                    .icon(()-> new ItemStack(ModBlocks.Gloom_Block)).entries((displayContext, entries) ->
                     {
                         entries.add(ModItems.Gloom_Whisp);
                         entries.add(ModBlocks.Gloom_Block);

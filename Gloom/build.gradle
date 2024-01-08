@@ -92,6 +92,11 @@ jar {
 	}
 }
 
+
+jar {
+	duplicatesStrategy(DuplicatesStrategy.WARN)
+}
+
 // configure the maven publication
 publishing {
 	publications {

@@ -2,7 +2,7 @@ package com.defalt.gloom;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class GloomClient implements ClientModInitializer {
+public class GloomClientC implements ClientModInitializer {
 
 
 
