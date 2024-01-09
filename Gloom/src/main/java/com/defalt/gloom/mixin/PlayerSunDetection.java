@@ -5,8 +5,6 @@
 
 package com.defalt.gloom.mixin;
 
-
-import com.defalt.gloom.Gloom;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -16,7 +14,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
 import static com.defalt.gloom.effect.ModEffects.gloom;
 import static com.defalt.gloom.effect.ModEffects.refresh;
 
@@ -27,19 +24,18 @@ public abstract class PlayerSunDetection extends LivingEntity {
         super(entityType, world);
     }
 
-    @Inject(
-            at = {@At("HEAD")},
-            method = {"tick"}
-    )
+    @Inject(at = {@At("HEAD")}, method = {"tick"})
     public void onTick(CallbackInfo ci) {
         LivingEntity player = this;
         if(player.getY() > 40){
             if (player.getWorld().isSkyVisible(player.getBlockPos()) && player.hasStatusEffect(gloom)) {
                 player.addStatusEffect(new StatusEffectInstance(refresh,20));
-                Gloom.LOGGER.info("a");
             }
         }
-
-
+        if(player.getY() > 240){
+            if(true/*If armor doesn't have the capability to keep warmth*/){
+                //Apply a freezing effect to the player
+            }
+        }
     }
 }
