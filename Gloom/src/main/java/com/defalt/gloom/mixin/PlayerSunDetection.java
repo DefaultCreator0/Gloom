@@ -29,7 +29,7 @@ public abstract class PlayerSunDetection extends LivingEntity {
         LivingEntity player = this;
         if(player.getY() > 40){
             if (player.getWorld().isSkyVisible(player.getBlockPos()) && player.hasStatusEffect(gloom)) {
-                player.addStatusEffect(new StatusEffectInstance(refresh,20));
+                player.addStatusEffect(new StatusEffectInstance(refresh,-1));
             }
         }
         if(player.getY() > 240){

@@ -16,6 +16,8 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven {url = "https://maven.kyrptonaught.dev"}
+	maven { url = 'https://maven.minecraftforge.net/' }
 }
 
 sourceSets {
@@ -38,7 +40,7 @@ loom {
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=gloon"
+			vmArg "-Dfabric-api.datagen.modid=gloom"
 
 			runDir "build/datagen"
 		}
@@ -62,6 +64,12 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
+	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta64-1.20.2'
+	include 'net.kyrptonaught:customportalapi:0.0.1-beta64-1.20.2'
+
+	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.20.2-3.0.0.170'
+
 }
 
 processResources {
@@ -111,5 +119,8 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+
+
+
 	}
 }

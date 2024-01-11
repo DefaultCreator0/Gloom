@@ -37,7 +37,8 @@ public class GloomBlock extends Block {
                 if(dmg >= 5 && entity.isAlive())
                 {
                     livingEntity = (LivingEntity) entity;
-                    if(!livingEntity.hasStatusEffect(malice)){livingEntity.addStatusEffect(new StatusEffectInstance(malice,2));}
+                    //if(!livingEntity.hasStatusEffect(malice)){livingEntity.addStatusEffect(new StatusEffectInstance(malice,2));}
+                    livingEntity.addStatusEffect(new StatusEffectInstance(malice, 2));
                     if(!livingEntity.hasStatusEffect(gloom)){livingEntity.addStatusEffect(new StatusEffectInstance(gloom, -1));}
                     livingEntity.removeStatusEffect(REGENERATION);
                     this.dmg = 1;
