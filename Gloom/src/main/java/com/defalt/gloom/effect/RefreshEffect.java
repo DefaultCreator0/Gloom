@@ -26,7 +26,7 @@ public class RefreshEffect extends StatusEffect {
         float MaxHealth = 20;
         if (entity.isPlayer() && entity.getWorld().isSkyVisible(entity.getBlockPos())) {
             entity.removeStatusEffect(gloom);
-            //entity.removeStatusEffect(malice);
+            entity.removeStatusEffect(malice);
             PlayerEntity p = (PlayerEntity) entity;
             if(p.getMaxHealth() <= 19){
                 p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)

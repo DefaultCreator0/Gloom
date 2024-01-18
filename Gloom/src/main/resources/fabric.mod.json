@@ -22,10 +22,7 @@
           "com.defalt.gloom.GloomClientC"
 		],
 		"fabric-datagen": [
-			"com.defalt.gloom.GloomDataGenerator"
-		],
-		"terrablender": [
-			"com.defalt.gloom.world.biome.ModTerrablenderAPI"
+			"com.defalt.gloom.world.GloomDataGenerator"
 		]
 	},
 	"mixins": [

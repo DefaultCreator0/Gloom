@@ -8,10 +8,6 @@ import com.defalt.gloom.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,14 +28,6 @@ public class Gloom implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEffects.registerEffect();
 		ModWorldGeneration.generateModWorldGen();
-
-		CustomPortalBuilder.beginPortal()
-				.frameBlock(Blocks.BEDROCK)
-				.lightWithItem(Items.FLINT)
-				.destDimID(new Identifier(Gloom.ModID, "gloomdim"))
-				.tintColor(0x7fffcc)
-				.flatPortal()
-				.registerPortal();
 
 		//ServerTickEvents.START_SERVER_TICK.register((ServerTickEvents.StartTick) new StepInSunlight());
 

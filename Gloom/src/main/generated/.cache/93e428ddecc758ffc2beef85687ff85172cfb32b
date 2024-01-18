@@ -1,5 +1,3 @@
-// 1.20.2	2024-01-11T16:32:03.690098	Gloom/World Gen
-a1e33f804610be6fcd9ab1f78b4f15465b4c0763 data\gloom\dimension_type\gloomdim_type.json
-ab3e51fd45c534555bab80a4b490279c693d2ee1 data\gloom\worldgen\biome\depths_biome.json
+// 1.20.2	2024-01-05T14:08:31.4281936	Gloom/World Gen
 325ac51c91487841e506fe313eabedc7afd59665 data\gloom\worldgen\placed_feature\gloom_placed.json
 929e1e75b668b7843ecd70a9c1413bf1a9b4d8f8 data\gloom\worldgen\configured_feature\gloom.json
