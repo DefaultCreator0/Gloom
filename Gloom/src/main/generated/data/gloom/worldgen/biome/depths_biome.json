@@ -1,0 +1,27 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 7683691,
+    "fog_color": 7230433,
+    "water_color": 3490655,
+    "water_fog_color": 2502464,
+    "particle": {
+      "options": {
+        "type": "minecraft:falling_dust"
+      },
+      "probability": 1
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    "minecraft:sculk_patch_deep_dark"
+  ]
+}
