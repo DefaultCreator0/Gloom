@@ -1,6 +1,7 @@
 package com.defalt.gloom.item;
 
 import com.defalt.gloom.Gloom;
+import com.defalt.gloom.item.custom.gloom_whisp;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -12,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item Gloom_Whisp = registerItem("gloom_whisp",new Item(new FabricItemSettings()));
+    public static final Item Gloom_Whisp = registerItem("gloom_whisp",new gloom_whisp(new FabricItemSettings()));
     public static final Item Sundelion = registerItem("sundelion", new Item(new FabricItemSettings()));
     public static final Item Sundelion_Petal = registerItem("sundelion_petal", new Item(new FabricItemSettings()));
 

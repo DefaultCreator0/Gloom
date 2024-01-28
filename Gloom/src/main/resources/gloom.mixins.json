@@ -3,7 +3,6 @@
 	"package": "com.defalt.gloom.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin",
 		"PlayerSunDetection",
 		"BrewingRecipeRegistryMixin"
 	],

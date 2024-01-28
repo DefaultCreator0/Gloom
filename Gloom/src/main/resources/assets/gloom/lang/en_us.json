@@ -9,6 +9,8 @@
   "effect.gloom.refresh_potion_effect": "Refresh",
   "effect.gloom.malice": "Malice",
 
+  "item.gloom.custom_gloom_whisp_toolip": "A glob of gloom, you can feel hatred emanating from it",
+
   "item.minecraft.tipped_arrow.effect.essence_of_hate_potion": "Arrow of Hatred",
   "item.minecraft.potion.effect.essence_of_hate_potion": "Potion of Hatred",
   "item.minecraft.splash_potion.effect.essence_of_hate_potion": "Splash Potion of Hatred",
