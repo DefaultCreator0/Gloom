@@ -1,7 +1,21 @@
 {
   "item.gloom.gloom_whisp": "Gloom Whisp",
+  "item.gloom.sundelion": "Sundelion",
+  "item.gloom.sundelion_petal": "Sundelion Petals",
   "itemgroup.gloom":"Gloom Items",
   "block.gloom.gloom_block": "Gloom Block",
   "effect.gloom.gloom": "Gloom",
-  "effect.gloom.refresh": "Refresh"
+  "effect.gloom.refresh": "Refresh",
+  "effect.gloom.refresh_potion_effect": "Refresh",
+  "effect.gloom.malice": "Malice",
+
+  "item.minecraft.tipped_arrow.effect.essence_of_hate_potion": "Arrow of Hatred",
+  "item.minecraft.potion.effect.essence_of_hate_potion": "Potion of Hatred",
+  "item.minecraft.splash_potion.effect.essence_of_hate_potion": "Splash Potion of Hatred",
+  "item.minecraft.lingering_potion.effect.essence_of_hate_potion": "Lingering Potion of Hatred",
+
+  "item.minecraft.tipped_arrow.effect.essence_of_light_potion": "Arrow of Light",
+  "item.minecraft.potion.effect.essence_of_light_potion": "Potion of Light",
+  "item.minecraft.splash_potion.effect.essence_of_light_potion": "Splash Potion of Light",
+  "item.minecraft.lingering_potion.effect.essence_of_light_potion": "Lingering Potion of Light"
 }

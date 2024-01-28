@@ -6,10 +6,9 @@ import com.defalt.gloom.item.ModItemGroups;
 import com.defalt.gloom.item.ModItems;
 import com.defalt.gloom.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
-
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import static com.defalt.gloom.potion.ModPotions.registerPotions;
 
 public class Gloom implements ModInitializer {
 
@@ -28,8 +27,7 @@ public class Gloom implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModEffects.registerEffect();
 		ModWorldGeneration.generateModWorldGen();
-
-		//ServerTickEvents.START_SERVER_TICK.register((ServerTickEvents.StartTick) new StepInSunlight());
+		registerPotions();
 
 	}
 }

@@ -29,24 +29,26 @@ public class GloomEffect extends StatusEffect {
         super.applyUpdateEffect(entity, amplifier);
 
             float CurrentHealth = entity.getHealth();
-            PlayerEntity p = (PlayerEntity)entity;
-            if(entity.getY() < 20){
-                if(p.hasStatusEffect(malice) && p.getHealth() < p.getMaxHealth())
-                p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
-                        .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
-            }
-            else{
-                if(entity.isPlayer() && !entity.getWorld().isSkyVisible(entity.getBlockPos())){
-                    if(p.hasStatusEffect(malice) && p.getHealth() < p.getMaxHealth()){
+
+            if(entity.isPlayer()){
+                PlayerEntity p = (PlayerEntity)entity;
+                if(entity.getY() < 20){
+                    if(p.hasStatusEffect(malice) && p.getHealth() < p.getMaxHealth())
                         p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
                                 .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
+                }
+                else{
+                    if(entity.isPlayer() && !entity.getWorld().isSkyVisible(entity.getBlockPos())){
+                        if(p.hasStatusEffect(malice) && p.getHealth() < p.getMaxHealth()){
+                            p.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)
+                                    .addPersistentModifier(new EntityAttributeModifier("Gloom",CurrentHealth-entity.getMaxHealth(), EntityAttributeModifier.Operation.ADDITION));
+                        }
                     }
                 }
+                if(entity.getY() > 20 && entity.getWorld().isSkyVisible(entity.getBlockPos())){
+                    p.addStatusEffect(new StatusEffectInstance(refresh,-1) );
+                }
             }
-            if(entity.getY() > 20 && entity.getWorld().isSkyVisible(entity.getBlockPos())){
-                p.addStatusEffect(new StatusEffectInstance(refresh,-1) );
-            }
-
     }
 
 
