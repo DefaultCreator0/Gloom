@@ -6,6 +6,7 @@ import com.defalt.gloom.item.ModItemGroups;
 import com.defalt.gloom.item.ModItems;
 import com.defalt.gloom.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import static com.defalt.gloom.potion.ModPotions.registerPotions;
@@ -28,7 +29,6 @@ public class Gloom implements ModInitializer {
 		ModEffects.registerEffect();
 		ModWorldGeneration.generateModWorldGen();
 		registerPotions();
-
 
 
 	}

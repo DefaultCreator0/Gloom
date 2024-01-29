@@ -1,5 +1,6 @@
 package com.defalt.gloom.world;
 
+import com.defalt.gloom.datagen.GloomModelGenerator;
 import com.defalt.gloom.datagen.ModWorldGenerator;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -14,7 +15,8 @@ public class GloomDataGenerator implements DataGeneratorEntrypoint {
 
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-        pack.addProvider(ModWorldGenerator::new);
+        //pack.addProvider(ModWorldGenerator::new);
+        pack.addProvider(GloomModelGenerator::new);
 
 
     }

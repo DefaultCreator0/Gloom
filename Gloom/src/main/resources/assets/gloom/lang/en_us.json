@@ -1,9 +1,13 @@
 {
+  "itemgroup.gloom":"Gloom Items",
+
   "item.gloom.gloom_whisp": "Gloom Whisp",
   "item.gloom.sundelion": "Sundelion",
   "item.gloom.sundelion_petal": "Sundelion Petals",
-  "itemgroup.gloom":"Gloom Items",
+
   "block.gloom.gloom_block": "Gloom Block",
+  "block.gloom.sundelion": "Sundelion",
+
   "effect.gloom.gloom": "Gloom",
   "effect.gloom.refresh": "Refresh",
   "effect.gloom.refresh_potion_effect": "Refresh",
