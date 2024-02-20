@@ -1,45 +1,56 @@
 {
-	"credit": "Made with Blockbench",
 	"0": "gloom:sky_arch_frame_0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "gloom:block/sky_arch_frame_0",
+		"particle": "gloom:block/sky_arch_frame_0"
+	},
 	"elements": [
 		{
 			"from": [7, 0, 7],
 			"to": [9, 6, 9],
-			"color": 3,
 			"faces": {
-				"north": {"uv": [0, 0, 2, 6], "texture": "#0"},
-				"east": {"uv": [0, 0, 2, 6], "texture": "#0"},
-				"south": {"uv": [0, 0, 2, 6], "texture": "#0"},
-				"west": {"uv": [0, 0, 2, 6], "texture": "#0"},
-				"up": {"uv": [0, 0, 2, 2], "texture": "#0"},
-				"down": {"uv": [0, 0, 2, 2], "texture": "#0"}
+				"north": {"uv": [6, 7, 7, 10], "texture": "#0"},
+				"east": {"uv": [7, 7, 8, 10], "texture": "#0"},
+				"south": {"uv": [0, 7.5, 1, 10.5], "texture": "#0"},
+				"west": {"uv": [1, 7.5, 2, 10.5], "texture": "#0"},
+				"up": {"uv": [3, 8.5, 2, 7.5], "texture": "#0"},
+				"down": {"uv": [9, 7, 8, 8], "texture": "#0"}
 			}
 		},
 		{
 			"from": [6, 6, 6],
 			"to": [10, 13, 10],
-			"color": 3,
 			"faces": {
-				"north": {"uv": [0, 0, 4, 7], "texture": "#0"},
-				"east": {"uv": [0, 0, 4, 7], "texture": "#0"},
-				"south": {"uv": [0, 0, 4, 7], "texture": "#0"},
-				"west": {"uv": [0, 0, 4, 7], "texture": "#0"},
-				"up": {"uv": [0, 0, 4, 4], "texture": "#0"},
-				"down": {"uv": [0, 0, 4, 4], "texture": "#0"}
+				"north": {"uv": [3, 0, 5, 3.5], "texture": "#0"},
+				"east": {"uv": [3, 3.5, 5, 7], "texture": "#0"},
+				"south": {"uv": [5, 0, 7, 3.5], "texture": "#0"},
+				"west": {"uv": [5, 3.5, 7, 7], "texture": "#0"},
+				"up": {"uv": [9, 5, 7, 3], "texture": "#0"},
+				"down": {"uv": [9, 5, 7, 7], "texture": "#0"}
 			}
 		},
 		{
 			"from": [5, 13, 5],
 			"to": [11, 16, 11],
-			"color": 3,
 			"faces": {
-				"north": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"east": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"south": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"west": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
-				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
+				"north": {"uv": [0, 6, 3, 7.5], "texture": "#0"},
+				"east": {"uv": [7, 0, 10, 1.5], "texture": "#0"},
+				"south": {"uv": [7, 1.5, 10, 3], "texture": "#0"},
+				"west": {"uv": [3, 7, 6, 8.5], "texture": "#0"},
+				"up": {"uv": [3, 3, 0, 0], "texture": "#0"},
+				"down": {"uv": [3, 3, 0, 6], "texture": "#0"}
 			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2]
 		}
 	]
 }

@@ -3,6 +3,7 @@ package com.defalt.gloom.block.custom;
 import com.defalt.gloom.Gloom;
 import com.defalt.gloom.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.LivingEntity;
@@ -17,7 +18,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.awt.*;
 import java.util.stream.Stream;
 
 public class Sky_Arch_Frame_Block extends Block {
@@ -28,30 +28,30 @@ public class Sky_Arch_Frame_Block extends Block {
         super(settings);
     }
 
-    private static VoxelShape Shape0 = Stream.of(
-            Block.createCuboidShape(5, 13, 5, 11, 16, 11),
+    private static final VoxelShape Shape0 = Stream.of(
             Block.createCuboidShape(7, 0, 7, 9, 6, 9),
-            Block.createCuboidShape(6, 6, 6, 10, 13, 10)
+            Block.createCuboidShape(6, 6, 6, 10, 13, 10),
+            Block.createCuboidShape(5, 13, 5, 11, 16, 11)
             ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
-    private static VoxelShape Shape1 = VoxelShapes.combineAndSimplify(
+    private static final VoxelShape Shape1 = VoxelShapes.combineAndSimplify(
             Block.createCuboidShape(5, 6, 5, 12, 16, 12),
             Block.createCuboidShape(5, 0, 5, 11, 6, 11),
             BooleanBiFunction.OR);
 
-    private static VoxelShape Shape2 = VoxelShapes.combineAndSimplify(
+    private static final VoxelShape Shape2 = VoxelShapes.combineAndSimplify(
             Block.createCuboidShape(3, 0, 3, 13, 9, 13),
             Block.createCuboidShape(2, 9, 2, 14, 16, 14),
             BooleanBiFunction.OR);
 
-    private static VoxelShape Shape3 = VoxelShapes.combineAndSimplify(
+    private static final VoxelShape Shape3 = VoxelShapes.combineAndSimplify(
             Block.createCuboidShape(2, 0, 2, 14, 4, 14),
             Block.createCuboidShape(1, 4, 1, 15, 16, 15),
             BooleanBiFunction.OR);
 
-    private static VoxelShape Shape4 = Block.createCuboidShape(1, 0, 1, 15, 16, 15);
+    private static final VoxelShape Shape4 = Block.createCuboidShape(1, 0, 1, 15, 16, 15);
 
-    private static VoxelShape Shape5 = Block.createCuboidShape(0, 0, 0, 16, 16, 16);
+    private static final VoxelShape Shape5 = Block.createCuboidShape(0, 0, 0, 16, 16, 16);
 
 
     @Override
@@ -85,6 +85,11 @@ public class Sky_Arch_Frame_Block extends Block {
             if(condition.contains("4")){world.setBlockState(pos,state.with(Level,5));}
             if(condition.contains("5")){world.setBlockState(pos,state.with(Level,0));}
         }
+    }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 
     @Override

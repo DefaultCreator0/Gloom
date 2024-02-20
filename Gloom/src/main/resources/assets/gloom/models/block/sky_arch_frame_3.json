@@ -1,32 +1,43 @@
 {
-	"credit": "Made with Blockbench",
 	"0": "gloom:block/sky_arch_frame_3",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "gloom:block/sky_arch_frame_3",
+		"particle": "gloom:block/sky_arch_frame_3"
+	},
 	"elements": [
 		{
 			"from": [2, 0, 2],
 			"to": [14, 4, 14],
-			"color": 9,
 			"faces": {
-				"north": {"uv": [0, 0, 12, 4], "texture": "#missing"},
-				"east": {"uv": [0, 0, 12, 4], "texture": "#missing"},
-				"south": {"uv": [0, 0, 12, 4], "texture": "#missing"},
-				"west": {"uv": [0, 0, 12, 4], "texture": "#missing"},
-				"up": {"uv": [0, 0, 12, 12], "texture": "#missing"},
-				"down": {"uv": [0, 0, 12, 12], "texture": "#missing"}
+				"north": {"uv": [7, 6, 10, 7], "texture": "#0"},
+				"east": {"uv": [7, 7, 10, 8], "texture": "#0"},
+				"south": {"uv": [7, 8, 10, 9], "texture": "#0"},
+				"west": {"uv": [3.5, 9, 6.5, 10], "texture": "#0"},
+				"up": {"uv": [10, 3, 7, 0], "texture": "#0"},
+				"down": {"uv": [10, 3, 7, 6], "texture": "#0"}
 			}
 		},
 		{
 			"from": [1, 4, 1],
 			"to": [15, 16, 15],
-			"color": 9,
 			"faces": {
-				"north": {"uv": [0, 0, 14, 12], "texture": "#missing"},
-				"east": {"uv": [0, 0, 14, 12], "texture": "#missing"},
-				"south": {"uv": [0, 0, 14, 12], "texture": "#missing"},
-				"west": {"uv": [0, 0, 14, 12], "texture": "#missing"},
-				"up": {"uv": [0, 0, 14, 14], "texture": "#missing"},
-				"down": {"uv": [0, 0, 14, 14], "texture": "#missing"}
+				"north": {"uv": [3.5, 0, 7, 3], "texture": "#0"},
+				"east": {"uv": [3.5, 3, 7, 6], "texture": "#0"},
+				"south": {"uv": [3.5, 6, 7, 9], "texture": "#0"},
+				"west": {"uv": [0, 7, 3.5, 10], "texture": "#0"},
+				"up": {"uv": [3.5, 3.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [3.5, 3.5, 0, 7], "texture": "#0"}
 			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1]
 		}
 	]
 }
