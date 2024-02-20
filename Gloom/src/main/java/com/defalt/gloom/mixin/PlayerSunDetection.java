@@ -34,10 +34,7 @@ public abstract class PlayerSunDetection extends LivingEntity {
         }
         if(player.hasStatusEffect(refresh) && player.hasStatusEffect(gloom)){ player.removeStatusEffect(gloom); player.removeStatusEffect(malice); }
         if(player.hasStatusEffect(refresh) && player.getMaxHealth() >= 20){player.removeStatusEffect(refresh);}
-        if(player.getY() > 240){
-            if(true/*If armor doesn't have the capability to keep warmth*/){
-                //Apply a freezing effect to the player
-            }
-        }
+
     }
+
 }

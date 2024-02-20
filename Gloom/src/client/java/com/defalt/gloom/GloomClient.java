@@ -16,6 +16,7 @@ public class GloomClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.Sundelion, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.Potted_Sundelion, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.Sky_Arch_Frame_Block,RenderLayer.getCutout());
 
 
 	}

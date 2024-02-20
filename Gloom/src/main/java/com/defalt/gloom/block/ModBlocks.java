@@ -2,6 +2,7 @@ package com.defalt.gloom.block;
 
 import com.defalt.gloom.Gloom;
 import com.defalt.gloom.block.custom.GloomBlock;
+import com.defalt.gloom.block.custom.Sky_Arch_Frame_Block;
 import com.defalt.gloom.block.custom.Sundelion_block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -27,6 +28,22 @@ public class ModBlocks {
 
     public static final Block Potted_Sundelion = registerBlock("potted_sundelion_block",
             new FlowerPotBlock(Sundelion, FabricBlockSettings.copyOf(Blocks.CORNFLOWER).nonOpaque()));
+    //2-19-24
+    public static final Block Sky_Island_Grass = registerBlock("sky_grass_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)));
+    //2-19-24
+    public static final Block Sky_Island_Stone = registerBlock("sky_stone_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    //2-19-24
+    public static final Block Sky_Lamp_Base = registerBlock("sky_lamp_base",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    //2-19-24
+    public static final Block Sky_Lamp_Top = registerBlock("sky_block_top",
+            new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE)));
+    //2-19-24
+    public static final Block Sky_Arch_Frame_Block = registerBlock("sky_arch_frame",
+            new Sky_Arch_Frame_Block(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
+    //2-19-24
 
     private static Block registerBlock(String name,Block block){
         registerBlockItem(name,block);

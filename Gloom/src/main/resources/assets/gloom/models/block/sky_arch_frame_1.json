@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"0": "gloom:block/sky_arch_frame_1",
+	"elements": [
+		{
+			"from": [4, 6, 4],
+			"to": [12, 16, 12],
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 8, 10], "texture": "#missing"},
+				"east": {"uv": [0, 0, 8, 10], "texture": "#missing"},
+				"south": {"uv": [0, 0, 8, 10], "texture": "#missing"},
+				"west": {"uv": [0, 0, 8, 10], "texture": "#missing"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#missing"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [5, 0, 5],
+			"to": [11, 6, 11],
+			"color": 3,
+			"faces": {
+				"north": {"uv": [0, 0, 6, 6], "texture": "#missing"},
+				"east": {"uv": [0, 0, 6, 6], "texture": "#missing"},
+				"south": {"uv": [0, 0, 6, 6], "texture": "#missing"},
+				"west": {"uv": [0, 0, 6, 6], "texture": "#missing"},
+				"up": {"uv": [0, 0, 6, 6], "texture": "#missing"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#missing"}
+			}
+		}
+	]
+}

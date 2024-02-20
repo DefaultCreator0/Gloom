@@ -15,7 +15,7 @@ public class GloomDataGenerator implements DataGeneratorEntrypoint {
 
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-        //pack.addProvider(ModWorldGenerator::new);
+        pack.addProvider(ModWorldGenerator::new);
         pack.addProvider(GloomModelGenerator::new);
 
 

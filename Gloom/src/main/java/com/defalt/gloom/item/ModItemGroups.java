@@ -19,6 +19,7 @@ public class ModItemGroups {
                     {
                         entries.add(ModItems.Gloom_Whisp);
                         entries.add(ModBlocks.Gloom_Block);
+                        entries.add(ModBlocks.Sky_Arch_Frame_Block);
                         entries.add(ModBlocks.Sundelion);
                         entries.add(ModItems.Sundelion_Petal);
                     }).build());
